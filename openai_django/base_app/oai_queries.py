@@ -4,10 +4,10 @@ import os
 import openai
 
 # OpenAI API Key
-if settings.OPENAI_API_KEY:
-    openai.api_key = settings.OPENAI_API_KEY
-else:
-    raise Exception("OpenAI API Key not found")
+# if settings.OPENAI_API_KEY:
+openai.api_key = settings.OPENAI_API_KEY
+# else:
+#     raise Exception("OpenAI API Key not found")
 
 
 def get_completion(prompt):
