@@ -11,9 +11,9 @@ openai.api_key = settings.OPENAI_API_KEY
 
 
 def get_completion(prompt):
-    query = openai.ChatCompletion.create(
+    completion = openai.ChatCompletion.create(
         # model='gpt-3.5-turbo',
-        model="gpt-3.5-turbo",
+        model=os.environ["OPENAI_MODEL_NAME"],
         messages=[
             {
                 "role": "system",
@@ -22,5 +22,5 @@ def get_completion(prompt):
             {"role": "user", "content": prompt},
         ],
     )
-    response = query.get("choices")[0]["message"]["content"]
-    return response
+    # response = query.get("choices")[0]["message"]["content"]
+    return completion.choices[0].message["content"]
