@@ -48,12 +48,12 @@
 </head>
 <body>
     <div class="container p-3">
-        <h3>GPT-3.5 Fine-Tuned to Add Cantillation Marks with Hebrew Text</h3>
+        <h3>GPT-3.5 Fine-Tuned to Add Cantillation Marks to Hebrew Text</h3>
         <!-- <a href="https://github.com/victordonoso/openai" class="link-info">Project on Github</a> -->
         <div class="mb-3">
             <form method="post">
                 {% csrf_token %}
-                <label for="prompt" class="form-label"><strong>Hebrew Text with Vowels: </strong></label>
+                <label for="prompt" class="form-label"><strong>Hebrew Text with Vowels (e.g., GPT-4 can be used to add vowels): </strong></label>
                 <textarea class="form-control" type="textarea" id="prompt" name="prompt" rows="3"></textarea>
                 <br>
                 <button class="btn btn-primary" type="submit">Submit</button>
