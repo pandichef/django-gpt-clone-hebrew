@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "gptheb.pythonanywhere.com"]
+ALLOWED_HOSTS = ["localhost", "gptheb.pythonanywhere.com", "taam.pythonanywhere.com"]
 
 
 # Application definition
