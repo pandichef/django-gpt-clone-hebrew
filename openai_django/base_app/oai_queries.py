@@ -17,7 +17,7 @@ def get_completion(prompt):
         messages=[
             {
                 "role": "system",
-                "content": "translate English to Biblical Hebrew with Cantillation",
+                # "content": "translate English to Biblical Hebrew with Cantillation",
                 "content": "add cantillation marks to Hebrew text that is already marked with vowels",
             },
             {"role": "user", "content": prompt},
